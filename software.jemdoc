@@ -1,0 +1,67 @@
+# jemdoc: menu{MENU}{software.html}, showsource
+= Software
+
+Most of our shared code resides on my [https://bitbucket.org/wgrissom/ Bitbucket] or [https://github.com/wgrissom Github] accounts. Specific links are given below.
+
+You will need Jeff Fessler's Medical Image Reconstruction
+Toolbox in your path, in order to run a lot of this software. This can be
+obtained from [http://www.eecs.umich.edu/~fessler/ his website.] Pulse design
+codes may require [http://rsl.stanford.edu/research/software.html John Pauly's RF design tools.]
+
+== Downloads (newest to oldest)
+- [https://github.com/poormanme/smallAnimalMRgHIFU Open-Source Small-Animal MR-Guided HIFU System:] Software and SolidWorks drawings for a low-cost small-animal MR-guided HIFU insert,
+including closed-loop MR thermometry-based temperature control.
+From [http://dx.doi.org/10.1186/s40349-016-0066-7 this paper,]
+and it was featured in [http://www.fusfoundation.org/news/1757-q-a-with-vanderbilt-university-s-will-grissom-and-charles-caskey multiple] [https://www.dotmed.com/news/story/31165 articles] [http://medicalphysicsweb.org/cws/article/newsfeed/65141 online]. 
+- [https://bitbucket.org/wgrissom/gnuradio-mri gr-MRI:] Python scripts and C++ objects to implement custom MRI spectrometers using off-the-shelf GNU Radio-compatible software-defined radios.
+From [http://dx.doi.org/10.1016/j.jmr.2016.06.023 this paper.] Also featured on [http://www.opensourceimaging.org/project/gr-mri-a-software-package-for-magnetic-resonance-imaging-using-software-defined-radios/ opensourceimaging.org,]
+and it was the [http://www.sciencedirect.com/science/article/pii/S1090780716301355/pdfft?md5=2eeb439fb552e0449595e869f8bfc30e&pid=1-s2.0-S1090780716301355-main.pdf cover article] in Journal of Magnetic Resonance in September 2016.
+- [https://bitbucket.org/wgrissom/acptx/ Array-Compressed Parallel Transmit Pulse Design:]
+MATLAB Scripts to jointly optimize RF pulses
+and transmit array compression weights.
+From [http://dx.doi.org/10.1002/mrm.26020 this paper.]
+- [https://bitbucket.org/wgrissom/tracr/downloads Trajectory Auto-Corrected Reconstruction (TrACR):]
+MATLAB scripts to jointly estimate images and k-space trajectory errors,
+with an in vivo golden angle radial example.
+Algorithm described in [http://dx.doi.org/10.1002/mrm.25916 this paper.]
+- [https://bitbucket.org/wgrissom/blipped-large-tip-angle-rf-pulse-design/downloads Blipped LTA RF Pulse Design:]
+MATLAB scripts to jointly design large-tip-angle parallel RF pulses and blipped gradient trajectories.
+Algorithm described in [http://dx.doi.org/10.1002/mrm.25739 this paper.]
+- [https://bitbucket.org/wgrissom/root-flipped-multiband-refocusing-pulses/downloads Root-flipped multiband refocusing pulses:]
+MATLAB scripts to design low-peak-power/short duration multiband refocusing pulses,
+and matched-phase excitation pulses.
+Algorithm described in [http://onlinelibrary.wiley.com/doi/10.1002/mrm.25629/abstract this paper.]
+- [https://bitbucket.org/wgrissom/k-space-thermometry/downloads k-Space Hybrid Thermometry:] MATLAB scripts and data to demo reconstruction of temperature maps from undersampled k-space data using k-space hybrid thermometry.
+From [http://onlinelibrary.wiley.com/doi/10.1002/mrm.25327/full this paper.]
+- [b1plusslr.zip b1plusslr.zip:] MATLAB scripts to design $|B_1^+|$-selective
+excitation pulses using the Shinnar-Le Roux algorithm.
+From [http://dx.doi.org/10.1016/j.jmr.2014.02.012 this paper.]
+- [http://www.vuiis.vanderbilt.edu/~grissowa/nacl_slrrf/nacl_slr.html Native Client SLR Pulse Design Tool:] From [grissom_nacl.pdf this 2013 ISMRM Data Sampling Workshop abstract.]
+- [bsoptrf/ Optimized Bloch-Siegert Encoding Pulse Library:] From [http://dx.doi.org/10.1016%2Fj.jmr.2012.11.004 this paper.]
+These pulses are a dramatic improvement over conventional pulses (e.g. Fermi) used in Bloch-Siegert $|B_1^+|$ mapping,
+due to their short duration (so you get a shorter TE and lower SAR for the same sensitivity),
+and have a much wider operating bandwidth.
+Two .zip files are in the linked directory,
+containing pulses sampled on 6.4us and 10us grids.
+We've also included phase difference-to-$|B_1^+|$ lookup tables and example MATLAB scripts and data to do the lookup.
+- [nuslr.zip nuslr.zip:] Nonuniform and multidimensional Shinnar-Le Roux RF pulse design,
+from [http://dx.doi.org/10.1002/mrm.23269 this paper.]
+Two examples are included: a spiral in-out refocusing pulse and a fat-suppressing spectral-spatial refocusing pulse for 3T.
+MATLAB's Parallel Computing Toolbox is used to implement two CUDA kernels,
+so you need that toolbox and a CUDA-enabled NVIDIA GPU to use the software.
+- [optimalcontrol.zip optimalcontrol.zip:] Spin-domain
+optimal control RF pulse design code. Based on the hard pulse
+approximation. Included are multithreaded (pthreads) mex functions for bloch simulations and
+derivative calculations.
+- [hybridthermo.zip hybridthermo.zip:] Hybrid
+multibaseline and referenceless PRF-shift temperature
+estimation. From [http://dx.doi.org/10.1118/1.3475943 this
+paper.]
+- [rwtl1thermo.zip rwtl1thermo.zip:] Reweighted-l1 referenceless PRF-shift temperature estimation.
+From [http://dx.doi.org/10.1002/mrm.22502 this paper.]
+- [blochsim_cuda.zip blochsim_cuda.zip:] Crude mex+CUDA implementation of a multidimensional Bloch equation simulator for RF excitation.
+Hopefully some will find this useful as a starting point for a more robust MATLAB-callable CUDA-based Bloch simulator.
+- [maxphase_spsp_test.tar.gz maxphase_spsp\_test.tar.gz:] Example of maximum linear-phase spectral-spatial RF pulse design, developed to suppress fat in a long-TE/short-TR GRE sequence for thermometry.
+From [http://www.ncbi.nlm.nih.gov/pubmed/19780177 this paper.]
+- [ptx_test.tar.gz ptx_test.tar.gz:] MATLAB objects and examples of fast small- and large-tip-angle RF pulse design
+(parallel and single-channel). From [http://www.ncbi.nlm.nih.gov/pubmed/16894579?ordinalpos=6&itool=EntrezSystem2.PEntrez.Pubmed.Pubmed_ResultsPanel.Pubmed_DefaultReportPanel.Pubmed_RVDocSum this paper] and [http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=4915785&isnumber=4359023" this paper].

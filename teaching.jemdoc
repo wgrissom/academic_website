@@ -1,0 +1,20 @@
+# jemdoc: menu{MENU}{teaching.html}, showsource
+= Teaching
+
+== Vanderbilt Courses:
+- BME 3300: Biomedical Instrumentation (2011--2016, Fall)
+-- [https://www.youtube.com/playlist?list=PLCDqPRbvMlPCt0pnGB-I5ftPSGCMOuDv0 YouTube lectures and videos]
+- Special Topics: Image Reconstruction and RF Pulse Design (2013 and 2015, Spring)
+-- [https://www.youtube.com/playlist?list=PLCDqPRbvMlPARNMspIvjb0bTtwuFRe9ds YouTube lectures]
+- Special Topics: MR Engineering (2014, Spring)
+-- [https://my.vanderbilt.edu/mrengineering2014/ Course blog]
+- Special Topics: Imaging Instrumentation (2016, Spring)
+-- [https://www.youtube.com/playlist?list=PLCDqPRbvMlPBLYVk9Sp1lQRkI0Nemr_uL Youtube videos]
+-- [https://my.vanderbilt.edu/imaginginstrumentation2016/ Course blog]
+
+== Videos and materials from conference educational talks:
+- Low-Peak Power Multiband Pulse Design Strategies (Sedona ISMRM SMS Workshop, 2015)
+-- [https://youtu.be/Hyfe9rEiNxg?list=PLCDqPRbvMlPDXKQMlNNeco2ARk12K2BSA Video of the talk]
+-- [https://bitbucket.org/wgrissom/lowpeakpowermbrf Multiband pulse design toolbox]
+- Nuts and Bolts of Imaging: Parallel Transmit Pulse Design
+-- [http://www.vuiis.vanderbilt.edu/~grissowa/grissom_ptxdesign_examples.zip Pulse design code]

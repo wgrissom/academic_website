@@ -1,0 +1,17 @@
+# jemdoc: menu{MENU}{index.html}, showsource
+= Will Grissom
+
+~~~
+{}{img_left}{photos/will.jpg}{Will Grissom}{200}{200}{IMGLINKTARGET}
+Assistant Professor of Biomedical Engineering\n
+Vanderbilt University
+~~~
+
+My group and I are based in the [http://www.vuiis.vanderbilt.edu Vanderbilt University Institute of Imaging Science (VUIIS).]
+
+== Research Areas
+- RF pulse design for MRI, particularly parallel excitation
+- MRI for guided interventions
+- Fast algorithms
+- Inverse problems
+- Optimization
