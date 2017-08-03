@@ -16,5 +16,7 @@
 - Low-Peak Power Multiband Pulse Design Strategies (Sedona ISMRM SMS Workshop, 2015)
 -- [https://youtu.be/Hyfe9rEiNxg?list=PLCDqPRbvMlPDXKQMlNNeco2ARk12K2BSA Video of the talk]
 -- [https://bitbucket.org/wgrissom/lowpeakpowermbrf Multiband pulse design toolbox]
-- Nuts and Bolts of Imaging: Parallel Transmit Pulse Design
+- Nuts and Bolts of Imaging: Parallel Transmit Pulse Design (ISMRM 2013 & 2014)
 -- [http://www.vuiis.vanderbilt.edu/~grissowa/grissom_ptxdesign_examples.zip Pulse design code]
+- Imaging Acquisition & Reconstruction: Compressed Sensing (ISMRM 2015)
+-- [https://bitbucket.org/wgrissom/ismrm-2015-cs-tutorial/downloads POCS-l1-SENSE code]
