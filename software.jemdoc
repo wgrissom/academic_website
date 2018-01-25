@@ -9,6 +9,7 @@ obtained from [http://www.eecs.umich.edu/~fessler/ his website.] Pulse design
 codes may require [http://rsl.stanford.edu/research/software.html John Pauly's RF design tools.]
 
 == MRI Temperature Imaging and High-Intensity Focused Ultrasound
+- [https://bitbucket.org/wgrissom/epi_stackofstars_thermometry Volumetric MRI Thermometry Using 3D Stack of Stars EPI] Code and example data to reconstruct 3D temperature maps from undersampled 3D echo-planar stack-of-stars EPI data. From [http://onlinelibrary.wiley.com/doi/10.1002/mrm.26862/full this paper.]
 - [https://bitbucket.org/wgrissom/thermometry_near_probes_paper Dual echo z-shimmed proton resonance frequency-shift MR thermometry near metallic ablation probes:]
 Code to estimate temperature maps from dual echo z-shimmed scans, which are designed to increase signal near metallic ablation probes. From [http://dx.doi.org/10.1002/mrm.26634 this paper].
 - [https://github.com/wgrissom/spatiallySegmentedMRIThermometry/ Spatially-Segmented MRI Thermometry:] Codes and data to reconstruct MRI temperature maps from undersampled k-space data, using a spatially-segmented image model, to overcome the effects of dynamic water bath movement in brain MR-guided focused ultrasound. From [https://doi.org/10.1186/s40349-017-0092-0 this paper].
