@@ -1,27 +1,30 @@
 # jemdoc: menu{MENU}{index.html}, showsource
-= Will Grissom
+= Grissom Lab
 
 ~~~
 {}{img_left}{photos/will.jpg}{Will Grissom}{200}{200}{IMGLINKTARGET}
-Assistant Professor of Biomedical Engineering\n
+PI Will Grissom\n
+Associate Professor of Biomedical Engineering\n
 Vanderbilt University
 ~~~
 
 My group and I are based in the [http://www.vuiis.vanderbilt.edu Vanderbilt University Institute of Imaging Science (VUIIS).]
 
 == Research Areas
+- Novel encoding method for high- and low-field MRI
 - RF pulse design for MRI, particularly parallel excitation
 - MRI for guided interventions
-- Fast algorithms
-- Inverse problems
-- Optimization
+- Fast algorithms, Inverse problems, and Optimization in Imaging
 
 Interested graduate student candidates should
 [will.grissom@vanderbilt.edu contact Professor Grissom] before submitting an application.
 
-Join us for [http://www.istu.org ISTU 2018],
-at Vanderbilt's Student Life Center!
-~~~
-{}{raw}
-<img src="photos/ISTU18.jpg" width="768"></img>
-~~~
+# Join us for [http://www.istu.org ISTU 2018],
+# at Vanderbilt's Student Life Center!
+# ~~~
+# {}{raw}
+# <img src="photos/ISTU18.jpg" width="768"></img>
+# ~~~
+
+== Grissom Lab on Twitter
+{{<a class="twitter-timeline" data-width="384" data-height="600" data-theme="light" href="https://twitter.com/wgrissom?ref_src=twsrc%5Etfw">Tweets by wgrissom</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>}}

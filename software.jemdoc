@@ -3,8 +3,12 @@
 
 Most of our shared code resides on my [https://bitbucket.org/wgrissom/ Bitbucket] or [https://github.com/wgrissom Github] accounts. Specific links are given below.
 
+We are also developing an open-source RF pulse design toolbox that is part
+of Frank Ong's [https://sigpy.readthedocs.io/en/latest/ SigPy],
+[https://sigpy.readthedocs.io/en/latest/mri_rf.html SigPy.RF].
+
 You will need Jeff Fessler's Medical Image Reconstruction
-Toolbox in your path, in order to run a lot of this software. This can be
+Toolbox in your path, in order to run a lot of the below software. This can be
 obtained from [http://www.eecs.umich.edu/~fessler/ his website.] Pulse design
 codes may require [http://rsl.stanford.edu/research/software.html John Pauly's RF design tools.]
 

@@ -11,47 +11,51 @@ our clinical and biomedical collaborators.
 Our work has been funded by [https://projectreporter.nih.gov/Reporter_Viewsh.cfm?sl=12ECCD0F4A8CC7D47598B8961CAA4A01A2FFCEB861BF NIH],
 DoD, and the Focused Ultrasound Foundation.
 
-=== Speed, safety, and sensitivity: RF pulses and parallel transmission for high field MRI
-The central goal of our high-field RF work is to enhance the sensitivity of MRI
-by addressing technical barriers to scanning at ultra-high magnetic field strengths.
-We are doing this by making the scanner’s RF transmit system more patient-adaptive.
+=== Parallel transmission for adaptive spatial encoding in high field MRI
+Ultra-high field MRI (7 Tesla and above) offers incredible gains in SNR and
+spatial resolution but is hampered by RF and static field inhomogeneities,
+and the acquisition of ultra-high resolution functional and diffusion brain
+images is challenged by motion.
+Our research addresses these issues by making the scanner’s RF transmit system
+more patient-adaptive and complementary to the scanner’s B0 gradients.
 Presently, when a patient enters an MRI scanner,
 the scanner only tunes its transmit gain to compensate differences in coil loading,
 and it is assumed that the radiation patterns are the same in all subjects.
-But at ultra-high field (7 Tesla and above),
-the MR frequency is high enough that EM fields become very different between subjects,
-resulting in large sensitivity and contrast variations that severely counteract ultra-high field’s SNR benefits.
+But at ultra-high field, the MR frequency is high enough that EM fields become
+very different between subjects, resulting in large sensitivity and contrast
+variations that severely counteract ultra-high field’s SNR benefits.
 This calls for an approach to RF transmission in which not only the amplitude
-but also the shape of the field is adjusted for each subject and even each scan,
-which can be achieved by dynamic beamforming with an array of RF coils (parallel transmission).
+but also the shape of the transmitted magnetic field is adjusted for each
+subject and even each scan, which can be achieved by dynamic beamforming
+with an array of RF coils (parallel transmission).
+At the same time, we can imagine how dynamically shaping the field can be used
+to encode signals across space, to address limitations of conventional B0 gradient encoding.
 
 ~~~
-{}{img_left}{photos/pTx.png}{Grissom Lab}{450}{}{IMGLINKTARGET}
+{}{img_left}{photos/shutteredEPI.png}{Grissom Lab}{450}{}{IMGLINKTARGET}
 /*Array-Compressed Parallel Transmission.*\n
-(Top) An array compression network (left) that connects 2 input transmit channels
-to 8 coils in an array (right).
-The network applies coil compression weights that are optimized by RF pulse design.
-(Bottom) 7 Tesla MRI scans demonstrating that our array-compressed pulse designs
-outperform previous coil combinations./
+(Top) An array compression network (left) that connects 2 transmit channels to 8 coils in an array (right). The network applies coil compression weights that are optimized by RF pulse design. (Bottom) Shuttered EPI at 7 Tesla, in which RF pulses are designed with a coil array to produce bands across the brain for motion-robust high-res fMRI and diffusion MRI./
 ~~~
 
-We have historically focused on numerical pulse optimization and pulse sequence
-methods for parallel transmission,
-and we have an NIH R01 grant (from NIBIB) on this topic.
-But recently we have become interested in how we can synergistically combine pulse
-and RF coil design, and we are pioneering a new approach to parallel transmission
-called array-compressed parallel transmission (*above figure*).
-Whereas pulse and coil design are conventionally decoupled problems,
+With the support of an NIH R01 grant from NIBIB,
+we are pursuing the latter idea and are pioneering a new approach to parallel
+transmission called array-compressed parallel transmission (*above figure*).
+Whereas RF pulse and coil design are conventionally decoupled problems,
 in array-compressed parallel transmission the pulse design also optimizes the
 coil array layout, which brings two major benefits.
 First, it addresses the need for many more coils in parallel transmission,
-by enabling a small number of RF channels and power amplifiers to drive a
-much larger number of coils.
+by enabling a small number of RF channels and power amplifiers to drive a much
+larger number of coils.
 Second, for the first time it will enable the integrated design of transmit
 coils for specific imaging applications,
 based directly on the spin physics of the targeted pulse sequence.
-We are also leveraging our RF pulse design expertise to enhance the speed of MRI
-without parallel transmission (*below figure*).
+As a first high-impact application of this concept,
+we are developing an array-compressed parallel transmit system that is
+optimized to produce a shifting set of bands (‘shutters’) across the brain
+using a combination of beamforming and tailored RF pulses.
+This makes it possible to acquire accelerated high-resolution 'multishot'
+imaging data and perform motion and phase corrections to each data frame without
+additional sensor or navigator data.
 
 ~~~
 {}{raw}
@@ -63,11 +67,11 @@ versus our root-flipped pulses which require less than a quarter of the peak pow
 and produce a non-linear phase profile across the slice that is canceled by jointly
 designing the excitation and refocusing pulses in the sequence.
 (Right) In vivo high-resolution diffusion-weighted images collected using the root-flipped pulses,
-using the Martinos Connectom scanner./
+using a Siemens Connectom scanner./
 
-=== Lowering costs and doing more with less: RF encoding and open MRI and HIFU systems
+=== RF Encoding for Gradient-Free MRI
 MRI is the infamous poster child of skyrocketing health care costs in the US,
-while access is a problem for low income patients and in the developing world.
+while access is a problem for low-income patients and in the developing world.
 Approximately one third of the cost of a modern MRI scanner,
 most of its electricity usage,
 as well as the loud noise it makes is due to the gradient system used for spatial encoding.
@@ -75,70 +79,78 @@ Current gradient systems operate in the acoustic frequency range.
 A much cheaper and silent alternative is to use RF field gradients,
 but RF spatial encoding has historically been a slow technique that severely
 restricts the range of tissue contrasts that can be achieved.
-With the support of an NIH R21 (NIBIB) grant,
-we are currently working on a novel RF spatial encoding approach based on the
+With the support of an NIH R01 (NIBIB) grant,
+we are working on a novel RF spatial encoding approach based on the
 Bloch-Siegert shift that will enable direct conversion of existing MRI pulse
-sequences without limiting contrast (*below figure, left*).
-One early result from this project is an open-source software package that
-enables off-the-shelf software-defined radios to be used as high-fidelity NMR
-spectrometers (*below figure, right*).
-This will dramatically simplify the development of custom and low-cost devices,
-and we have also used it for educational MRI and ultrasound scanners.
-Overall, our RF encoding technology will be especially valuable for low-field MRI.
+sequences without limiting contrast (*below figure*).
+One early result from this project was an open-source software package that
+enables off-the-shelf software-defined radios to be used as high-fidelity NMR spectrometers,
+which simplifies the development of custom and low-cost devices.
+We use it in our educational MRI and ultrasound scanners,
+and it is the basis of a commercial low-field MRI spectrometer from Promaxo.
 
 ~~~
 {}{raw}
-<img src="photos/bsandgrmri.jpg" width="768"></img>
+<img src="photos/bsandrfgradientcoil.png" width="768"></img>
 ~~~
 /*RF Gradient-Encoded MRI.*\n
-(Left) A slice-selective 2D MRI pulse sequence in which the conventional gradient
-pulses for spatial encoding are swapped out one-for-one with frequency-swept RF p
-ulses that apply phase gradients via the Bloch-Siegert shift.
-(Right) Screenshot of our gr-MRI software,
-which enables off-the-shelf software-defined radios to be programmed as NMR and MRI spectrometers./
+(Left) A 2D MRI sequence using frequency-swept RF pulses that spatially encode
+signal using the Bloch-Siegert shift.
+(Middle) An RF gradient solenoid for RF-slice selection with a receive coil insert.
+(Right) 2D brain phantom images using conventional and RF-selective excitation./
 
-Therapeutic ultrasound has enormous potential for functional neurosurgery and neurostimulation,
-and we are working with collaborators Charles Caskey and Li-Min Chen to develop and
-evaluate the combination of ultrasound neurostimulation and fMRI.
-The Grissom lab specifically develops MRI guidance techniques and open therapeutic ultrasound systems.
-An example of the latter is our preclinical MR-guided high-intensity focused
-ultrasound (HIFU) system (*below figure*),
-which comprises a scanner insert table and a suite of MRI pulse sequences and closed-loop temperature control software.
-[https://www.dotmed.com/news/story/31165 It garnered attention in the press],
-and will lower the bar for biomedical researchers with new ideas and applications
-to enter the therapeutic ultrasound field.
-Its development was supported by our DoD project to investigate immunomodulatory
-effects of HIFU in breast tumors,
-and we have since leveraged it for new projects on ultrasound-mediated drug delivery.
+=== MR-Guided Focused Ultrasound and Ultrasound Beam Mapping
+We have pursued several projects to develop MRI technologies including real-time
+temperature mapping, RF coils, and acoustic radiation force imaging for guiding
+high-intensity focused ultrasound (HIFU) thermal therapy and neuromodulation
+with simultaneous fMRI, as well as laser interstitial thermal brain therapy (*below figure*).
+
+~~~
+{}{img_left}{photos/propellerbeanies.png}{Grissom Lab}{450}{}{IMGLINKTARGET}
+/*Propeller Beanie Crossed Wires for Improved MRI During Brain HIFU.*\n
+(Left) By placing a pair of passive crossed wires a few cm above the head,
+we are able to (Top Right) alleviate quarter-wave RF wave cancellation and
+increase SNR in the brain during HIFU,
+which dramatically reduces temperature errors (Bottom Right)./
+~~~
+
+Currently our largest project in this space aims to develop MR-guided ultrasound
+neuromodulation hardware and methods to identify pain regions in the brain for
+subsequent deep brain stimulation electrode placement.
+At the same time, our interest in novel imaging techniques has extended into the ultrasound space.
+One example is our NIH-supported project to address a critical need in HIFU dosimetry,
+which is the ability to quantitatively map pressure beams rapidly,
+cheaply, and at therapeutic pressure levels.
+Previously the only way to measure a HIFU pressure field is to mechanically
+sweep a hydrophone through it.
+This takes tens of hours and must be done far below therapeutic pressure levels,
+which is a problem because the shape of the beam changes with increasing
+pressure due to non-linearity.
+Our approach is a form of schlieren imaging that is based on changes in
+refractive index with pressure, which causes blurring of a scene viewed through
+the pressure field (*below figure*).
+From photographs of the blurred scene we can quantitatively reconstruct the
+projected pressure field using a deep network,
+without strobing or an advanced optical setup.
+This enables spatially-resolved HIFU beam measurements for dosimetry and
+quality assurance in seconds,
+with minimal operator expertise and at a fraction of the cost of existing methods.
 
 ~~~
 {}{raw}
-<img src="photos/preclinicalhifu.jpg" width="768"></img>
+<img src="photos/zebrographyNetwork.png" width="768"></img>
 ~~~
-/*Preclinical HIFU system.*\n
-(Left) The scanner insert table, which positions an animal and imaging coil above a HIFU transducer.
-(Right) Closed-loop controlled hyperthermia using the system in a mouse model of breast cancer./
-
-
-Another example is our project to address a critical need in HIFU dosimetry,
-which is the ability to quantitatively map HIFU pressure beams rapidly, cheaply,
-and at therapeutic pressure levels.
-Currently the only way to measure a HIFU pressure field is to mechanically sweep a hydrophone through it.
-This takes tens of hours and must be done far below therapeutic pressure levels,
-which is a problem because the shape of the beam changes with increasing pressure due to non-linearity.
-Our approach is a form of schlieren imaging that is based on changes in refractive
-index with pressure, which causes blurring of a scene viewed through the pressure field (*below figure*).
-The goal is to develop this approach into a quantitative tomographic method
-and release it as an app that uses a smartphone camera and a tablet for displaying scenes,
-along with gantry hardware designs.
-This would enable spatially-resolved HIFU beam measurements for dosimetry and quality assurance in minutes,
-with minimal operator expertise and at a fraction of the cost of existing methods.
-We have recently won an NIH R21 grant to support this work.
-
-~~~
-{}{img_left}{photos/zebrography.png}{Grissom Lab}{538}{}{IMGLINKTARGET}
 /*Fast optical imaging of HIFU pressure fields.*\n
-(Left) A HIFU beam scanner that uses a camera and a tablet PC to map pressure
-fields via their influence on water’s refractive index.
-(Right) Direct backprojection reconstruction of a 1.1 MHz HIFU transducer’s pressure field./
-~~~
+(Left) A HIFU beam scanner that uses a camera, a water tank,
+and an iPad to map pressure fields via their influence on water’s refractive index.
+(Right) Quantitative pressure beam maps are reconstructed using a deep network
+that operates on blurred photo segments./
+
+#~~~
+#{}{img_left}{photos/zebrographyNetwork.png}{Grissom Lab}{538}{}{IMGLINKTARGET}
+#/*Fast optical imaging of HIFU pressure fields.*\n
+#(Left) A HIFU beam scanner that uses a camera, a water tank,
+#and an iPad to map pressure fields via their influence on water’s refractive index.
+#(Right) Quantitative pressure beam maps are reconstructed using a deep network
+#that operates on blurred photo segments./
+#~~~

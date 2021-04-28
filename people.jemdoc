@@ -2,46 +2,61 @@
 = Grissom Lab Members
 
 ~~~
-{}{img_left}{photos/ismrm17.jpg}{Grissom Lab}{512}{384}{IMGLINKTARGET}
-Current and former Grissom lab members at ISMRM 2017.\n
-Left to right: Becca Weires, Anuj Sharma, Huiwen Luo, Annie Zhang, Xinqiang Yan,
-Julianna Ianni, Megan Poorman, Will Grissom, and Pooja Gaur.
+{}{img_left}{photos/ISMRM2019.jpg}{Grissom Lab}{510}{382}{IMGLINKTARGET}
+Grissom Lab reunion at ISMRM 2019.\n
+Left to Right: Chris Vaughn, Jun Ma, Anuj Sharma, Megan Poorman, Charlotte Sappo, Kristin Quah, Gabriella Gallego, and Jonathan Martin.
 ~~~
 
 ~~~
-{}{img_left}{photos/grissom_lab_summer_2015.png}{Grissom Lab}{425}{270}{IMGLINKTARGET}
-The Grissom Lab in Summer 2015.\n
-Left to right: Megan Poorman, Pooja Gaur, Sumeeth Jonathan,
-Will Grissom, Chris Hasselwander, Zhipeng Cao, Martin Ma, Annie Zhang,
-Julianna Ianni, and Xinqiang Yan.
+{}{img_left}{photos/GrissomLabJuly2018.jpg}{Grissom Lab}{518}{427}{IMGLINKTARGET}
+The Grissom Lab in Summer 2018.\n
+Front Row Left to Right: Huiwen Luo, Megan Poorman, Kristin Quah, Margerie Huet, Sumeeth Jonathan.
+Back Row Left to Right: Martin Ma, Xinqiang Yan, Charlotte Sappo, Will Grissom, Zhipeng Cao.
 ~~~
+
+#~~~
+#{}{img_left}{photos/ismrm17.jpg}{Grissom Lab}{512}{384}{IMGLINKTARGET}
+#Current and former Grissom lab members at ISMRM 2017.\n
+#Left to right: Becca Weires, Anuj Sharma, Huiwen Luo, Annie Zhang, Xinqiang Yan,
+#Julianna Ianni, Megan Poorman, Will Grissom, and Pooja Gaur.
+#~~~
 
 == PI: Will Grissom, Ph.D.
 - [https://www.dropbox.com/s/r2n3mu8zc712qg0/6a.cv_wg.docx?dl=0 CV (Word doc),] [https://scholar.google.com/citations?user=EqhIT8wAAAAJ&hl=en Google Scholar,] [http://www.ncbi.nlm.nih.gov/sites/myncbi/william.grissom.1/bibliography/47335224/public/?sort=date&direction=ascending Pubmed MyBibliography.]
 - Training and former positions:
-  -- 2009--2011: Research Engineer, Imaging Technologies, GE Global Research, Munich, Germany.
+  -- 2009--2011: Research Engineer, Imaging Technologies, [http://ww2.geglobalresearch.com/locations/munich-germany GE Global Research, Munich, Germany.]
   -- 2008--2009: Postdoctoral Fellow in Electrical Engineering and Radiology, Stanford University.
   Advised by [http://kbplab.stanford.edu Kim Butts Pauly] and [http://web.stanford.edu/~pauly/ John Pauly].
   -- 2004--2008: Ph.D. in Biomedical Engineering at University of Michigan.
   Advised by [http://nollresearch.engin.umich.edu Doug Noll] and [http://web.eecs.umich.edu/~fessler/ Jeff Fessler].
 
 == Graduate Students
-- Huiwen Luo: Current, joined Fall 2017.
-- Charlotte Sappo: Current, joined Fall 2017.
-- Sumeeth Jonathan: Current, joined Fall 2015.
-- Jun (Martin) Ma: Current, joined Fall 2014.
-- Megan Poorman: Current, joined Fall 2014.
-- Chris Hasselwander: Current, joined Fall 2014.
-- Julianna Ianni: Current, joined Fall 2012.
+- Sarah Garrow: Current, joined Fall 2021. Working on MR-guided robotic laser ablation and transcranial focused ultrasound.
+- Kristen Zarcone: Current, joined Fall 2021. Working on low-field MRI and magnetic particle imaging.
+- Abitha Srinivas: Current, joined Fall 2020. Working on Bloch-Siegert RF encoding.
+- Chris Vaughn: Current, joined Fall 2019. Working on SENF (pTx RF encoding + MR Fingerprinting).
+- Jonathan Martin: Current, joined Fall 2018. Working on RF pulse design.
+- Huiwen Luo: Current, joined Fall 2017. Working on optical FUS beam mapping.
+- Charlotte Sappo: Current, joined Fall 2017. Working on RF coils and hardware.
+- Sumeeth Jonathan: Current, joined Fall 2015. Working on transcranial FUS autofocusing.
+- Jun (Martin) Ma: Defended Spring 2020, joined Fall 2014. Currently at Stanford.
+- Megan Poorman: Defended July 2018, joined Fall 2014, did a postdoc at NIST in Boulder, now at Hyperfine.
+- Chris Hasselwander: Graduated (Masters) Spring 2016, currently an engineer at Stryker.
+- Julianna Ianni: Defended Fall 2017, currently a [https://www.linkedin.com/in/julianna-ianni/ Deep Learning Engineer at Proscia].
 - Pooja Gaur: Defended Spring 2016, currently a postdoc in Kim Butts Pauly's group at Stanford.
-- Anuj Sharma: Defended Spring 2015, currently a [https://www.linkedin.com/in/anujsharma001 Research Scientist at Toshiba Medical Research Institute.]
+- Anuj Sharma: Defended Spring 2015, currently at ViewRay.
 
-== Postdocs and Research Assistant Professors
-- Xinqiang Yan: Current, joined 2014.
-- Zhipeng Cao: Current, joined 2013.
+== Postdocs
+- Matt Wilcox: Current, joined Fall 2020. Working on integrated FUS-RF coils for MR-guided neuromodulation, and on Bloch-Siegert RF encoding.
+- Xinqiang Yan: Former, joined 2014, now Vanderbilt Radiology faculty.
+- Zhipeng Cao: Former, joined 2013, now Vanderbilt Radiology faculty.
 - Marcin Jankiewicz: Former, currently a [https://za.linkedin.com/in/marcin-jankiewicz-a844778 Research Officer and Lecturer at University of Cape Town.]
 
 == Undergraduate Students
+- Heng Sun: Current, working on RF pulse design and SigPy.RF.
+- Antonio Glenn: Current, working on multi-coil shimming for MR-guided FUS.
+- Gabriela Gallego: Former, worked on RF coils and hardware
+- Kristin Quah: Former, went to grad school at Stanford U
 - Tianyi (Mason) Chen: Former, went to grad school at Johns Hopkins
 - Becca Weires: Former, went to law school at Stanford U
 - Yuxin (Annie Zhang): Former, went to grad school at U Wisconsin
